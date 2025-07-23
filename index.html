@@ -10,7 +10,7 @@
 <body>
 
 <header class="site-header">
-  <div class="nav-container">
+  <div class="nav-container centered-wide">
     <a href="/" class="logo-link">
       <img src="assets/img/logo.svg" alt="Territorial Logo" class="site-logo" />
     </a>
@@ -28,9 +28,10 @@
   </div>
 </header>
 
+
 <section class="hero-section">
-  <div class="hero-content">
-    <h1 class="hero-title">BUILD PRODUCTS THAT DRIVE MEANINGFUL IMPACT</h1>
+  <div class="hero-content centered-wide">
+    <h1 class="hero-title hero-title-split">BUILD PRODUCTS THAT DRIVE MEANINGFUL IMPACT</h1>
   </div>
 </section>
 
@@ -49,7 +50,7 @@
           <img src="assets/img/bear-logo.png" alt="Bear Head Logo" class="center-bear-img" />
 						</div>
 					</div>
-					<p class="paragraph">Since 2005, we've focused on what matters: making meaningful impact through digital products that serve real people, at real scale.</p>
+					<p class="paragraph">Since 2005, we’ve focused on what matters: making meaningful impact through digital products that serve real people, at real scale.</p>
 				</div>
 			</div>
 		</section>
@@ -70,7 +71,13 @@
                     </div>
                     <div class="bottom">
                         <p class="text">We’ve helped the majority of over 700 chambers unlock new levels of clarity, connection, and control. Processes are simpler, networks stronger, and information turns into action. But that’s just the start...</p>
-                            <img src="assets/img/crp-image-desktop.png" alt="">
+                            <picture>
+  <!-- For mobile (max width 768px) -->
+  <source srcset="assets/img/crp-image-mobile.png" media="(max-width: 768px)">
+  
+  <!-- Default (desktop) -->
+  <img src="assets/img/crp-image-desktop.png" alt="Responsive image">
+</picture>
                         </div>
                     </div>
                 </div>
@@ -86,7 +93,7 @@
 
                     </div>
                     <div class="bottom">
-                        <p class="text">Those chambers give over 33,000 businesses and their employees across Canada access to coaching services. Helping them build lasting strength through clearer decisions, better leadership, and a healthier way to work. And there is still more.</p>
+                        <p class="text">Those chambers have helped over 33,000 businesses and their employees across Canada build lasting strength through clearer decisions, better leadership, and a healthier way to work. And there’s still more.</p>
                             <img src="assets/img/arcora-image-desktop.png" alt="">
                         </div>
                     </div>
@@ -110,19 +117,11 @@
     </div>
 </section>
 
-
-<!-- <section class="product-end-message">
-  <div class="end-message-inner">
-    <h2>Let’s Build What’s Next</h2>
-    <p>Talk to us about how we can help your team leave a mark.</p>
-  </div>
-</section> -->
-
-<section class="mwg_effect032">
+<section class="teams-intro">
 
     <div class="pin-height">
         <div class="container">
-            <!-- <p class="header">King Gizzard & The Lizard Wizard is an Australian band renowned for their boundless creativity, blending genres like psychedelic rock, garage, jazz, and metal.</p> -->
+            <p class="header">A collective of creative minds dedicated to improving how Canadians access and experience their benefits.</p>
             <svg width="1516" height="92" viewBox="0 0 1516 92" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path id="path" d="M0 92.0674C528.5 -28.9327 977.5 -32.4328 1516.5 92.0674" stroke="none"/>
                 <text id="text">
@@ -133,17 +132,17 @@
             </svg>
         </div>
     </div>
-</section>
+</section> 
 
 		<section class="teams-section">
 			<div class="pin-height">
 				<div class="container">
 
-					<div class="team-header">
-						<p>A collective of creative minds dedicated to improving how Canadians access and experience their benefits.</p>
-						<!-- <p>Your most stream artist in 2024</p>
-						<p>6 artists</p> -->
-					</div>
+					<!-- <div class="header">
+						<p>Spotify datas</p>
+						<p>Your most stream artist in 2024</p>
+						<p>6 artists</p>
+					</div> -->
 
 <div class="circles">
   <div class="circle">
@@ -189,16 +188,21 @@
   </div>
 </div>
 
-</section>
 
-    <footer class="site-footer">
+
+				</div>
+			</div>
+		</section>
+
+
+        <footer class="site-footer">
         <div class="footer-headline right-wide">
             The journey begins with us, shaping products that make their <span class="accent">mark</span>.
         </div>
         <div class="centered-wide footer-content">
             <div class="footer-left">Territorial 2025</div>
             <div class="footer-right">
-                <div class="footer-phone">306-715-1538</div>
+<div class="footer-phone">306-715-1538</div>
                 <div class="footer-address">
                     107-123 Ave B South
                     <br /> Saskatoon, SK S7M 5X6, Treaty 6
@@ -207,14 +211,10 @@
         </div>
     </footer>
 
-
-				</div>
-			</div>
-		</section>
-
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/lenis@1.1.16/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
