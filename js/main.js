@@ -120,20 +120,35 @@ window.addEventListener("DOMContentLoaded", () => {
         const contentWrapper = slide.querySelector('.content-wrapper')
         const content = slide.querySelector('.content')
 
-        gsap.to(content, {
-            rotationZ: (Math.random() - 0.5) * 10, // RotationZ between -5 and 5 degrees
-            scale: 0.7, // Slight reduction of the content
-            rotationX: 40,
-            ease: 'power1.in', // Starts gradually
-            scrollTrigger: {
-                pin: contentWrapper, // contentWrapper is pinned during the animation
-                trigger: slide, // Listens to the slide’s position
-                start: 'top 0%', // Starts when its top reaches the top of the viewport
-                end: '+=' + window.innerHeight, // Ends 100vh later
-                scrub: true // Progresses with the scroll
-            }
-        })
-
+        
+        if (!slide.classList.contains('end-slide')) {
+            gsap.to(content, {
+                rotationZ: (Math.random() - 0.5) * 10, // RotationZ between -5 and 5 degrees
+                scale: 0.7, // Slight reduction of the content
+                rotationX: 40,
+                ease: 'power1.in', // Starts gradually
+                scrollTrigger: {
+                    pin: contentWrapper, // contentWrapper is pinned during the animation
+                    trigger: slide, // Listens to the slide’s position
+                    start: 'top 0%', // Starts when its top reaches the top of the viewport
+                    end: '+=' + window.innerHeight, // Ends 100vh later
+                    scrub: true // Progresses with the scroll
+                }
+            })
+        } else {
+            // just scroll the last slide normally
+            gsap.to(content, {
+                autoAlpha: 0, // Ends at opacity: 0 and visibility: hidden
+                ease: 'power1.in', // Starts gradually
+                scrollTrigger: {
+                    trigger: content, // Listens to the position of content
+                    start: 'top -80%', // Starts when the top exceeds 80% of the viewport
+                    end: '+=' + 0.2 * window.innerHeight, // Ends 20% later
+                    scrub: true // Progresses with the scroll
+                }
+            });
+        }
+        // Fade out the content after the animation
         gsap.to(content, {
             autoAlpha: 0, // Ends at opacity: 0 and visibility: hidden
             ease: 'power1.in', // Starts gradually
