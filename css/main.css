@@ -868,6 +868,7 @@ body {
   max-width: 700px;
   margin-left: auto;
   padding-right: 20px;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 768px) {
@@ -888,7 +889,6 @@ body {
   justify-content: space-between;
   align-items: flex-end;
   font-size: 20px;
-  font-family: 'Benton Sans', sans-serif;
   color: var(--color-light);
   gap: 20px;
 }
