@@ -1,0 +1,23 @@
+{
+  "Reads": [
+    {"name": "Atomic Design", "url": "https://atomicdesign.bradfrost.com/table-of-contents/"},
+    {"name": "Don't Make Me Think", "url": "https://sensible.com/dont-make-me-think/"},
+    {"name": "Inspired", "url": "https://www.amazon.ca/INSPIRED-Create-Tech-Products-Customers/dp/1119387507"},
+    {"name": "Building a Second Brain", "url": "https://www.buildingasecondbrain.com/"},
+    {"name": "Continuous Discovery Habits", "url": "https://www.amazon.ca/Continuous-Discovery-Habits-Discover-Products/dp/1736633309/ref=sr_1_1?dib=eyJ2IjoiMSJ9.XJuLeSC-49__z27pmfckOrfT7d0KzTd0ntF1sfOpv2PsxuJLXjM7E4-F7MEOpwDzonOXUjCWLEMRSqgRZIM2B0V3Q1NOIA0HssE1QMNTuVyEIdkK-iWwq6Pjszsg0Nb183XwHFlO1f4kXjf-Jf5RbSUleuhtjR89QOkgGKrIpilE4gxeDSo3HRY7QHJsdiCy8CDHGMyDeI30HrG0KG3XfQ.vt0gdDmF08a5JSTNrosja30ccot_eZHBMoZFPF37pAg&dib_tag=se&hvadid=667740281673&hvdev=c&hvlocphy=1001925&hvnetw=g&hvqmt=e&hvrand=18057287767441615884&hvtargid=kwd-1280768570572&hydadcr=5438_13351372&keywords=continuous+discovery+habits&qid=1738343750&sr=8-1"}
+  ],
+  "Listens": [
+    {"name": "Lenny's Podcast", "url": "https://www.lennysnewsletter.com/podcast"},
+    {"name": "ShopTalk Show", "url": "https://shoptalkshow.com/"},
+    {"name": "Masters of Scale", "url": "https://mastersofscale.com/"},
+    {"name": "The Product Experience", "url": "https://www.mindtheproduct.com/the-product-experience-podcast/"},
+    {"name": "Design Details", "url": "https://designdetails.fm/"}
+  ],
+  "Notices": [
+    {"name": "AI-Driven Generalist Workflow", "url": "https://www.businessinsider.com/ai-empowering-generalist-behaviour-figma-ceo-tech-design-2025-8?utm_source=chatgpt.com"},
+    {"name": "Post-Quantum Cryptography", "url": "https://www.gartner.com/en/articles/top-technology-trends-2025?utm_source=chatgpt.com"},
+    {"name": "Developers as Strategic Enablers", "url": "https://www.techradar.com/pro/more-than-coders-developers-as-business-enablers?utm_source=chatgpt.com"},
+    {"name": "Svelte 5 & Reactive Runes", "url": "https://en.wikipedia.org/wiki/Svelte?utm_source=chatgpt.com"},
+    {"name": "Agentic Web Protocols", "url": "https://www.theverge.com/decoder-podcast-with-nilay-patel/669409/microsoft-cto-kevin-scott-interview-ai-natural-language-search-openai?utm_source=chatgpt.com"}
+  ]
+}
