@@ -854,6 +854,7 @@ body {
   .site-footer {
     background-position: top right;
     background: url('../assets/img/footer-bg.png') no-repeat;
+    background-size: cover;
     padding-bottom: 80px;
   }
 }
