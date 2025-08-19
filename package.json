@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "build": "minify assets/css/main.css > assets/css/main.min.css && minify assets/js/main.js > assets/js/main.min.js",
+    "watch": "nodemon --watch assets/ --ext css,js --ignore *.min.js --ignore *.min.css --exec 'npm run build'"
+  },
+  "dependencies": {
+    "minify": "^14.1.0",
+    "nodemon": "^3.1.10"
+  }
+}
