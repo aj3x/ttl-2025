@@ -1,4 +1,21 @@
 {
+  "html": {
+    "removeComments": true,
+    "removeCommentsFromCDATA": true,
+    "removeCDATASectionsFromCDATA": true,
+    "collapseWhitespace": true,
+    "collapseBooleanAttributes": true,
+    "removeAttributeQuotes": true,
+    "removeRedundantAttributes": true,
+    "useShortDoctype": false,
+    "removeEmptyAttributes": true,
+    "removeEmptyElements": true,
+    "removeOptionalTags": false,
+    "removeScriptTypeAttributes": true,
+    "removeStyleLinkTypeAttributes": true,
+    "minifyJS": true,
+    "minifyCSS": true
+  },
   "js": {
     "type": "terser",
     "terser": {
