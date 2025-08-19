@@ -1,8 +1,8 @@
 {
-    "js": {
-        "type": "terser",
-        "terser": {
-            "mangle": false
-        }
+  "js": {
+    "type": "terser",
+    "terser": {
+      "mangle": false
     }
+  }
 }
