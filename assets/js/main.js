@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
       { opacity: 0 },
       {
         opacity: 1,
-        duration: 1.2,
+        duration: 0.6,
         ease: 'power2.out',
         scrollTrigger: {
           trigger: impactHeaderLeft,
