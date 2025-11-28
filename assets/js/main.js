@@ -65,6 +65,25 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  // Fade in 'How We Shape The Future' text on scroll
+  const impactHeaderLeft = q('.impact-section .header .left');
+  if (impactHeaderLeft) {
+    gsap.fromTo(impactHeaderLeft,
+      { opacity: 0 },
+      {
+        opacity: 1,
+        duration: 1.2,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: impactHeaderLeft,
+          start: 'top 80%',
+          toggleActions: 'play none none none',
+          once: true
+        }
+      }
+    );
+  }
+
   wrapWordsInSpan(q(".impact-section .paragraph"));
 
   const aboutPin = q(".impact-section .pin-height");
