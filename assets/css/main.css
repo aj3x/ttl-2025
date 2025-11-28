@@ -556,7 +556,7 @@ body {
   transform-style: preserve-3d;
   /* inherits the perspective from the parent */
   transform-origin: 50% 10%;
-  padding: 25px 50px 50px 25px;
+  padding: 50px 75px 50px 75px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -588,6 +588,7 @@ body {
   align-items: flex-end;
   font: 400 normal 2vw / 1.1 'Benton Sans', sans-serif;
   letter-spacing: -0.03em;
+  padding-bottom: 100px;
 }
 
 .product-section .bottom>div:last-child {
