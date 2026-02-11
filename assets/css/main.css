@@ -570,10 +570,11 @@ body {
   transform-style: preserve-3d;
   /* inherits the perspective from the parent */
   transform-origin: 50% 10%;
-  padding: 50px 75px 50px 75px;
+  padding: 50px 25px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  gap: 100px;
   z-index: 10;
 }
 
@@ -586,7 +587,7 @@ body {
 .product-section .bottom {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 @media (max-width: 678px) {
@@ -599,10 +600,9 @@ body {
 .product-section .text {
   width: 32vw;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   font: 400 normal 2vw / 1.1 'Benton Sans', sans-serif;
   letter-spacing: -0.03em;
-  padding-bottom: 100px;
 }
 
 .product-section .bottom>div:last-child {
@@ -652,6 +652,7 @@ body {
 @media (max-aspect-ratio: 1/1) {
   .product-section .content {
     padding: 15px;
+    gap: 0px;
     justify-content: initial;
   }
 
