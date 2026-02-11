@@ -100,39 +100,48 @@
 
   <section class="product-section">
 
-    <div>
-      <div class="slide">
-        <div class="content-wrapper">
-          <div class="content">
-            <div class="top">
+    <div class="slide">
+      <div class="content-wrapper">
+        <div class="content">
+          <div class="top">
 
 
-              <p>The Engine Behind Efficient Work</p>
+            <p>The Engine Behind Efficient Work</p>
 
-              <a href="https://www.chambers.chamberplan.ca">
+            <a href="https://www.chambers.chamberplan.ca">
 
-                <svg width="81" height="82" viewBox="0 0 81 82" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M19.1883 54.0014L14.9883 49.8014L43.7883 21.0015H17.9883V15.0015H53.9883V51.0014H47.9883V25.2015L19.1883 54.0014Z"
-                    fill="currentColor" />
-                </svg>
+              <svg width="81" height="82" viewBox="0 0 81 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19.1883 54.0014L14.9883 49.8014L43.7883 21.0015H17.9883V15.0015H53.9883V51.0014H47.9883V25.2015L19.1883 54.0014Z"
+                  fill="currentColor" />
+              </svg>
 
-              </a>
+            </a>
 
-            </div>
-            <div class="bottom">
-              <p class="text">We’ve helped the majority of over 700 chambers unlock new levels of clarity, connection,
-                and control. Processes are simpler, networks stronger, and information turns into action. But that’s
-                just the start...</p>
-
-
-              <picture>
-                <source srcset="assets/img/crp-image-mobile.png" media="(max-width: 600px)">
-                <img id="crp-image" src="assets/img/crp-image-desktop.png" loading="lazy" alt="Responsive image">
-              </picture>
+          </div>
+          <div class="bottom">
+            <p class="text">We’ve helped the majority of over 700 chambers unlock new levels of clarity, connection,
+              and control. Processes are simpler, networks stronger, and information turns into action. But that’s
+              just the start...</p>
 
 
-            </div>
+            <picture>
+              <source srcset="
+                assets/img/crp-image/mobile-320.png 320w,
+                assets/img/crp-image/mobile-640.png 640w,
+                assets/img/crp-image/mobile-960.png 960w,
+                assets/img/crp-image/mobile-1280.png 1280w,
+                assets/img/crp-image/mobile.png 1920w
+                " media="(max-width: 600px)">
+              <img id="crp-image" src="assets/img/crp-image-desktop.png" srcset="
+                assets/img/crp-image/desktop-320.png 320w,
+                assets/img/crp-image/desktop-640.png 640w,
+                assets/img/crp-image/desktop-960.png 960w,
+                assets/img/crp-image/desktop-1280.png 1280w,
+                assets/img/crp-image/desktop.png 1920w
+                " sizes="(max-width: 600px) 100vw, 800px" alt="Chamber Plan dashboard screenshot" loading="lazy">
+            </picture>
+
           </div>
         </div>
       </div>
