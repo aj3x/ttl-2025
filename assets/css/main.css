@@ -468,6 +468,8 @@ body {
   padding: 0 25px;
   overflow: hidden;
   position: relative;
+  max-width: 1800px;
+  margin: 0 auto;
 }
 
 .impact-section .paragraph {
@@ -570,12 +572,19 @@ body {
   transform-style: preserve-3d;
   /* inherits the perspective from the parent */
   transform-origin: 50% 10%;
+}
+
+.product-section .content .content-inner {
   padding: 50px 25px;
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
   gap: 100px;
   z-index: 10;
+  max-width: 1800px;
+  margin: 0 auto;
+  /* left: 50%;
+  transform: translateX(-50%); */
 }
 
 .product-section .top {
