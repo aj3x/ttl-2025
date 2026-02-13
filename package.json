@@ -2,7 +2,7 @@
   "scripts": {
     "build": "minify assets/css/main.css > assets/css/main.min.css && minify assets/js/main.js > assets/js/main.min.js",
     "images": "node scripts/sharp.js",
-    "watch": "nodemon --watch assets/ --ext css,js --ignore *.min.js --ignore *.min.css --exec 'npm run build'"
+    "watch": "nodemon"
   },
   "dependencies": {
     "minify": "^14.1.0",

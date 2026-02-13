@@ -1,0 +1,6 @@
+{
+  "watch": ["assets/"],
+  "ext": "css,js",
+  "ignore": ["*.min.js", "*.min.css"],
+  "exec": "npm run build && npm run cache-bust"
+}
