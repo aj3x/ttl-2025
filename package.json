@@ -2,6 +2,7 @@
   "scripts": {
     "build": "minify assets/css/main.css > assets/css/main.min.css && minify assets/js/main.js > assets/js/main.min.js",
     "images": "node scripts/sharp.js",
+    "cache-bust": "node scripts/update-version.js",
     "watch": "nodemon"
   },
   "dependencies": {
