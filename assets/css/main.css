@@ -966,11 +966,11 @@ body {
   background-repeat: no-repeat;
 }
 
-/* @media (min-width: 600px) {
+@media (min-width: 600px) {
   .hero-section.hero-section--about {
-    background-image: url("/img/about-hero-desktop.jpg");
+    background-image: url("/assets/img/about-hero-desktop.png");
   }
-} */
+}
 
 /* section after the hero */
 .about-intro-block {
