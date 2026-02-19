@@ -1370,3 +1370,163 @@ body {
 .card-links a:hover {
   text-decoration-thickness: 2px;
 }
+
+
+/* Privacy Policy Page Styles */
+.privacy-content {
+  padding: 0 50px;
+  padding-bottom: 160px;
+}
+
+.privacy-content p {
+  font-family: "Benton Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.05;
+  color: #000;
+  margin-bottom: 0;
+}
+
+.privacy-content li {
+  font-family: "Benton Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #000;
+  margin-bottom: 2px;
+}
+
+@media (min-width: 1200px) {
+  .privacy-content p,
+  .privacy-content li {
+    font-size: 24px;
+  }
+}
+
+/* Intro paragraphs before sections */
+.privacy-content > p {
+  margin-bottom: 0;
+}
+
+.privacy-content > p + p {
+  margin-top: 24px;
+}
+
+.privacy-content > ul {
+  margin: 24px 0;
+  padding-left: 36px;
+  list-style-type: disc;
+}
+
+.privacy-content > ul li {
+  font-weight: 500;
+}
+
+/* Privacy section blocks */
+.privacy-section {
+  margin-top: 72px;
+}
+
+.privacy-section h2 {
+  font-family: "Benton Sans", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.05;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 1200px) {
+  .privacy-section h2 {
+    font-size: 36px;
+  }
+}
+
+.privacy-section h3 {
+  font-family: "Benton Sans", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.05;
+  text-transform: none;
+  color: #000;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 1200px) {
+  .privacy-section h3 {
+    font-size: 28px;
+  }
+}
+
+.privacy-section p {
+  margin-bottom: 0;
+}
+
+.privacy-section p + p {
+  margin-top: 24px;
+}
+
+.privacy-section ul {
+  margin: 24px 0 0 0;
+  padding-left: 36px;
+  list-style-type: disc;
+}
+
+.privacy-section p + ul {
+  margin-top: 24px;
+}
+
+.privacy-section ul + p {
+  margin-top: 24px;
+}
+
+.privacy-section ul ul {
+  margin: 2px 0;
+  padding-left: 36px;
+}
+
+.privacy-section li {
+  margin-bottom: 2px;
+}
+
+.privacy-section li:last-child {
+  margin-bottom: 0;
+}
+
+/* Privacy links - pink/magenta accent */
+.privacy-content a.accent,
+.privacy-content a.link {
+  color: #bf0092;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.privacy-content a.accent:hover,
+.privacy-content a.link:hover {
+  text-decoration-thickness: 2px;
+}
+
+/* Bold/emphasized text within privacy content */
+.privacy-content strong {
+  font-weight: 500;
+}
+
+/* Hero subtitle for privacy page */
+.hero-subtitle {
+  font-family: "Benton Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.05;
+  color: #595959;
+  margin-top: 16px;
+  margin-bottom: 80px;
+}
+
+@media (min-width: 1200px) {
+  .hero-subtitle {
+    font-size: 24px;
+  }
+}
