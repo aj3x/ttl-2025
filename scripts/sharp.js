@@ -2,10 +2,22 @@ const sharp = require("sharp");
 const fs = require("fs");
 
 const input = [
-  "assets/img/crp-image/desktop.png",
-  "assets/img/crp-image/mobile.png"
+  ["assets/img/crp-image/desktop.png", "sm"],
+  ["assets/img/crp-image/mobile.png", "sm"],
+  ["assets/img/heroes/about/about-hero-desktop.png", "xxl"],
+  ["assets/img/heroes/about/about-hero-mobile.png", "sm"],
+  ["assets/img/heroes/main/hero-bg-desktop.png", "xxl"],
+  ["assets/img/heroes/main/hero-bg-mobile.png", "sm"],
 ]; // your source image
-const sizes = [320, 640, 960, 1280];
+const sizes = {
+  xxs: [320, 640],
+  xs: [320, 640, 960],
+  sm: [320, 640, 960, 1280],
+  md: [320, 640, 960, 1280, 1600],
+  lg: [320, 640, 960, 1280, 1600, 1920],
+  xl: [320, 640, 960, 1280, 1600, 1920, 2560],
+  xxl: [320, 640, 960, 1280, 1600, 1920, 2560, 3840],
+};
 
 async function generate(imagePath, sizes, formats = ["png", "webp"]) {
   try {
@@ -28,4 +40,4 @@ async function generate(imagePath, sizes, formats = ["png", "webp"]) {
 }
 
 for (const inputImage of input)
-  generate(inputImage, sizes);
+  generate(inputImage[0], sizes[inputImage[1]]);
