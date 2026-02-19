@@ -35,6 +35,8 @@ body {
   /* matches your p/li default */
   line-height: 1.2;
   /* you used ~120% */
+
+  overflow-x: hidden;
 }
 
 /* Headings */
@@ -140,8 +142,14 @@ a.link--arrow:hover::after {
   transform: translate3d(15%, -15%, 0);
 }
 
+p > a {
+  color: var(--color-primary);
+  font-weight:bold;
+}
+
 
 :root {
+  --color-primary: #BF0092;
   --color-dark: #313131;
   --color-accent: #AF1F8E;
   --color-light: #ffffff;
