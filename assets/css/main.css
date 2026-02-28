@@ -889,7 +889,7 @@ body {
 @media screen and (min-width: 768px) {
   .site-footer {
     background-position: top right;
-    background: url('/assets/img/footer-bg.png') no-repeat;
+    background: url('/assets/img/heroes/footer/footer-bg-img-3840.webp') no-repeat;
     background-size: cover;
     padding-bottom: 80px;
   }

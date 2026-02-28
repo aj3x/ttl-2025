@@ -8,6 +8,7 @@ const input = [
   ["assets/img/heroes/about/about-hero-mobile.png", "sm"],
   ["assets/img/heroes/main/hero-bg-desktop.png", "xxl"],
   ["assets/img/heroes/main/hero-bg-mobile.png", "sm"],
+  ["assets/img/heroes/footer/footer-bg-img.png", "xxl"],
 ]; // your source image
 const sizes = {
   xxs: [320, 640],
@@ -19,7 +20,7 @@ const sizes = {
   xxl: [320, 640, 960, 1280, 1600, 1920, 2560, 3840],
 };
 
-async function generate(imagePath, sizes, formats = ["png", "webp"]) {
+async function generate(imagePath, sizes, formats = ["webp"]) {
   try {
     const outputPath = imagePath.replace(/(\.[\w\d_-]+)$/i, "");
     for (const width of sizes) {
