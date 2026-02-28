@@ -417,7 +417,7 @@ body {
 }
 
 .impact-section .pin-height {
-  height: 500vh;
+  height: 300vh;
 }
 
 .impact-section .header {
@@ -702,7 +702,7 @@ body {
 /* Teams Section */
 .teams-intro .pin-height {
   height: 400vh;
-  margin-top: -30vh;
+  margin-top: -50vh;
 }
 
 .teams-intro .container {
@@ -753,7 +753,7 @@ body {
 .teams-section {
   position: relative;
   overflow: hidden;
-  margin: -100vh 0 0;
+  margin: -130vh 0 0;
 }
 
 /* Header Layout */

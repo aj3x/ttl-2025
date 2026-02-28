@@ -93,8 +93,8 @@ document.addEventListener("DOMContentLoaded", () => {
   if (aboutPin && aboutCont && aboutWords.length) {
     gsap.to(aboutWords, {
       x: 0,
-      stagger: 0.02,
-      ease: "power4.inOut",
+      stagger: 0.013,
+      ease: "power2.inOut",
       scrollTrigger: {
         trigger: aboutPin,
         start: "top top",
