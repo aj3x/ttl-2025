@@ -216,7 +216,7 @@ document.addEventListener("DOMContentLoaded", () => {
     duration: 0.2,
     scrollTrigger: {
       trigger: ".teams-section",
-      start: "top top",
+      start: "top 80%",
       end: "top top-=1",
       toggleActions: "play none reverse none"
     }
