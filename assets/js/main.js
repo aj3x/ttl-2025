@@ -21,6 +21,11 @@ function wrapWordsInSpan(element) {
 
 // --- Boot ----------------------------------------------------
 document.addEventListener("DOMContentLoaded", () => {
+
+  const copyright = q('#copyright-year');
+  if (copyright)
+    copyright.textContent = new Date().getFullYear();
+
   // GSAP
   gsap.registerPlugin(ScrollTrigger);
 
