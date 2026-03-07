@@ -354,9 +354,7 @@ body {
 }
 
 .hero-title {
-  color: var(--color-white);
   max-width: 420px;
-  font-size: 56px;
 }
 
 /* Responsive Images + your step sizes/max-widths */
@@ -368,6 +366,13 @@ body {
   .hero-title {
     max-width: 560px;
     font-size: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-content {
+    align-self: flex-start;
+    padding-top: 18vh;
   }
 }
 
