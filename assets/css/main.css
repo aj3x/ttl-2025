@@ -920,6 +920,12 @@ body {
   color: var(--color-accent);
 }
 
+@media screen and (min-width: 768px) and (max-width: 999px) {
+  .footer-headline .accent {
+    color: var(--color-light);
+  }
+}
+
 .footer-content {
   display: flex;
   justify-content: space-between;
