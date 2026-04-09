@@ -27,6 +27,12 @@
 }
 
 /* Base text */
+html,
+body {
+  background-color: var(--color-background);
+  overflow-x: hidden;
+}
+
 body {
   color: var(--color-black);
   font-family: "Benton Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -566,6 +572,7 @@ body {
   height: 100vh;
   box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.14);
   z-index: 10;
+  background-color: var(--color-background);
 }
 
 .product-section .slide.end-slide {
