@@ -25,7 +25,9 @@
   src: url("/assets/fonts/Ingeborg-BoldItalic.otf");
   font-weight: 700;
 }
-
+.dev {
+  background-color: fuchsia;
+}
 /* Base text */
 html,
 body {
@@ -101,7 +103,8 @@ h4 {
 
 /* Paragraphs / lists */
 p,
-li {
+li,
+.p {
   font-family: "Benton Sans", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -109,8 +112,13 @@ li {
   color: var(--color-black);
 }
 
+.p {
+  text-transform: none;
+
+}
+
 @media (min-width: 1400px) {
-  p {
+  p, .p {
     font-size: 36px;
   }
 }
@@ -411,7 +419,7 @@ body {
   }
 }
 
-/* Impact Section */
+/* #region Impact Section */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -553,7 +561,10 @@ body {
   }
 }
 
+/* #endregion */
 
+
+/* #region Product Section */
 
 .product-section {
   color: black;
@@ -647,7 +658,8 @@ body {
   border-radius: 0.02em;
 }
 
-.product-section .top p {
+.product-section .top p,
+.product-section .top h2 {
   font: 500 normal 5vw / 0.9 'Benton Sans', sans-serif;
   letter-spacing: -0.06em;
 }
@@ -709,9 +721,10 @@ body {
   }
 }
 
+/* #endregion */
 
 
-/* Teams Section */
+/* #region Teams Section */
 .teams-intro .pin-height {
   height: 400vh;
   margin-top: -50vh;
@@ -880,9 +893,9 @@ body {
   background: url("/assets/img/paw-print.png") no-repeat center/contain;
   pointer-events: none;
 }
+/* #endregion */
 
-
-/* Footer */
+/* #region Footer */
 
 .site-footer {
   position: relative;
@@ -989,6 +1002,8 @@ body {
 .footer-address {
   align-items: flex-end;
 }
+
+/* #endregion */
 
 
 /* About Page */
