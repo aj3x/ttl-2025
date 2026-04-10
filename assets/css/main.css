@@ -275,12 +275,17 @@ body {
   justify-content: center;
   align-items: center;
   transform: translateX(100%);
-  transition: transform 0.4s ease;
+  visibility: hidden;
+  pointer-events: none;
+  transition: transform 0.4s ease, visibility 0s linear 0.4s;
   z-index: 100;
 }
 
 .main-nav.active {
   transform: translateX(0);
+  visibility: visible;
+  pointer-events: auto;
+  transition: transform 0.4s ease;
 }
 
 .main-nav a {
@@ -300,6 +305,8 @@ body {
   .main-nav {
     position: static;
     transform: none;
+    visibility: visible;
+    pointer-events: auto;
     flex-direction: row;
     height: auto;
     width: auto;
@@ -341,6 +348,14 @@ body {
   .main-nav a.active::after {
     transform: scaleX(1);
   }
+}
+
+.menu-toggle:focus-visible,
+.main-nav a:focus-visible,
+.logo-link:focus-visible,
+.footer-privacy a:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
 }
 
 
@@ -1590,5 +1605,17 @@ body {
 @media (min-width: 1200px) {
   .hero-subtitle {
     font-size: 24px;
+  }
+}
+
+/* ---- Reduced motion: skip all transforms/opacity intro states ---- */
+@media (prefers-reduced-motion: reduce) {
+  .impact-section .word {
+    transform: none;
+  }
+
+  .hero-title-split .line {
+    transform: none;
+    opacity: 1;
   }
 }

@@ -12,7 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="assets/css/main.min.css?v=6d2218cd536c189d">
+  <link rel="stylesheet" href="assets/css/main.css?v=747368f4c26fb7d3">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
@@ -52,17 +52,17 @@
 
   <header class="site-header">
     <div class="nav-container centered-wide">
-      <a href="/" class="logo-link">
-        <img src="assets/img/logo.svg" alt="Territorial Logo" class="site-logo" />
+      <a href="/" class="logo-link" aria-label="Visit Territorial homepage">
+        <img src="assets/img/logo.svg" alt="" class="site-logo" />
       </a>
 
-      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </button>
 
-      <nav class="main-nav">
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
         <a href="about.html">About us</a>
         <a href="mailto:us@territorial.ca">Contact</a>
       </nav>
@@ -73,7 +73,7 @@
   <main>
   <section class="hero-section hero-section--home">
     <div class="hero-content centered-wide">
-      <h1 class="hero-title hero-title-split">BUILD PRODUCTS THAT DRIVE MEANINGFUL IMPACT</h1>
+      <h1 class="hero-title hero-title-split" aria-label="BUILD PRODUCTS THAT DRIVE MEANINGFUL IMPACT">BUILD PRODUCTS THAT DRIVE MEANINGFUL IMPACT</h1>
     </div>
   </section>
 
@@ -233,43 +233,43 @@
         <div class="circles">
           <div class="circle">
             <div class="card polaroid-card">
-              <img src="assets/img/team7.jpg" alt="Team Member 1" loading="lazy">
+              <img src="assets/img/team7.jpg" alt="Our favourite ornament" loading="lazy">
             </div>
           </div>
 
           <div class="circle">
             <div class="card polaroid-card">
-              <img src="assets/img/team2.jpg" alt="Team Member 2" loading="lazy">
+              <img src="assets/img/team2.jpg" alt="Creation from our team meetup" loading="lazy">
             </div>
           </div>
 
           <div class="circle">
             <div class="card polaroid-card">
-              <img src="assets/img/team3.jpg" alt="Team Member 3" loading="lazy">
+              <img src="assets/img/team3.jpg" alt="Our CTO and CEO" loading="lazy">
             </div>
           </div>
 
           <div class="circle">
             <div class="card polaroid-card">
-              <img src="assets/img/team4.jpg" alt="Team Member 4" loading="lazy">
+              <img src="assets/img/team4.jpg" alt="Some of our developers" loading="lazy">
             </div>
           </div>
 
           <div class="circle">
             <div class="card polaroid-card">
-              <img src="assets/img/team5.jpg" alt="Team Member 5" loading="lazy">
+              <img src="assets/img/team5.jpg" alt="Group Picture" loading="lazy">
             </div>
           </div>
 
           <div class="circle">
             <div class="card polaroid-card">
-              <img src="assets/img/team6.jpg" alt="Team Member 6" loading="lazy">
+              <img src="assets/img/team6.jpg" alt="Getting coffee together" loading="lazy">
             </div>
           </div>
 
           <div class="circle">
             <div class="card polaroid-card">
-              <img src="assets/img/team1.jpg" alt="Team Member 7" loading="lazy">
+              <img src="assets/img/team1.jpg" alt="The whole crew" loading="lazy">
             </div>
           </div>
         </div>
@@ -286,7 +286,7 @@
       Shaping products that make their <span class="accent">mark</span>.
     </div>
     <div class="centered-wide footer-content">
-      <div class="footer-left">© <span id="copyright-year"></span> Territorial</div>
+      <div id="copyright" class="footer-left">© 2026 Territorial</div>
       <div class="footer-right">
         <div class="footer-privacy">
           <a href="/privacy.html">Privacy Policy</a>
@@ -299,7 +299,7 @@
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <script src="https://unpkg.com/lenis@1.1.16/dist/lenis.min.js"></script>
   <script src="https://unpkg.com/split-type"></script>
-  <script src="assets/js/main.min.js?v=6d2218cd536c189d"></script>
+  <script src="assets/js/main.js?v=747368f4c26fb7d3"></script>
 </body>
 
 </html>

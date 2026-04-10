@@ -13,18 +13,16 @@ const gsapToIf = (selector, vars) => {
 function wrapWordsInSpan(element) {
   if (!element) return;
   const text = element.textContent || "";
+  // Preserve full sentence for screen readers; individual spans are decorative
+  element.setAttribute("aria-label", text.trim());
   element.innerHTML = text
     .split(" ")
-    .map((w) => `<span class="word">${w}</span>`)
+    .map((w) => `<span class="word" aria-hidden="true">${w}</span>`)
     .join(" ");
 }
 
 // --- Boot ----------------------------------------------------
 document.addEventListener("DOMContentLoaded", () => {
-
-  const copyright = q('#copyright-year');
-  if (copyright)
-    copyright.textContent = new Date().getFullYear();
 
   // GSAP
   gsap.registerPlugin(ScrollTrigger);
@@ -35,14 +33,52 @@ document.addEventListener("DOMContentLoaded", () => {
   // Mobile menu
   const menuToggle = q(".menu-toggle");
   const mainNav = q(".main-nav");
-  menuToggle?.addEventListener("click", () => {
-    menuToggle.classList.toggle("open");
-    mainNav?.classList.toggle("active");
-  });
+  const mobileMq = window.matchMedia("(max-width: 599px)");
+
+  const setMenuState = (isOpen) => {
+    if (!menuToggle || !mainNav) return;
+    menuToggle.classList.toggle("open", isOpen);
+    mainNav.classList.toggle("active", isOpen);
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+
+    // Keep hidden nav out of keyboard and assistive-tech navigation on mobile.
+    if (mobileMq.matches) {
+      mainNav.setAttribute("aria-hidden", String(!isOpen));
+    } else {
+      mainNav.removeAttribute("aria-hidden");
+    }
+  };
+
+  if (menuToggle && mainNav) {
+    setMenuState(false);
+
+    menuToggle.addEventListener("click", () => {
+      const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
+      setMenuState(!isExpanded);
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && menuToggle.getAttribute("aria-expanded") === "true") {
+        setMenuState(false);
+        menuToggle.focus();
+      }
+    });
+
+    mobileMq.addEventListener("change", () => {
+      setMenuState(false);
+    });
+  }
 
   // --- Hero split animation ---------------------------------
   if (window.SplitType) {
+    const heroEl = q(".hero-title-split");
+    // Preserve accessible text before SplitType replaces innerHTML
+    if (heroEl) heroEl.setAttribute("aria-label", (heroEl.textContent || "").trim());
     const split = new SplitType(".hero-title-split", { types: "lines", lineClass: "line" });
+    split.lines.forEach((line) => {
+      line.setAttribute("aria-hidden", "true");
+    });
     gsap.from(split.lines, {
       yPercent: 100,
       opacity: 0,
